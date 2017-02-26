@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_filetype"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/format_zip" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/iv_filetype"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_filename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文件名" />
+
+        <TextView
+            android:id="@+id/tv_filesize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="文件大小"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_extratto"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom"
+        android:drawablePadding="5dp"
+        android:drawableTop="@mipmap/toolbar_extractto"
+        android:text="解压"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_filetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_extratto"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/tv_extratto"
+        android:text="时间"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="10sp" />
+
+</RelativeLayout>

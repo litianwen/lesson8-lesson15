@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.lesson10_framework.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/tab_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:tag="0"
+            android:id="@+id/tab_rb_favor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/back"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_favor"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="收藏"
+            android:textColor="@android:color/white" />
+
+
+        <RadioButton
+            android:tag="1"
+            android:id="@+id/tab_rb_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/back"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_order"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="订单"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:tag="2"
+            android:id="@+id/tab_rb_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/back"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_home"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="主页"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:tag="3"
+            android:id="@+id/tab_rb_uc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/back"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_uc"
+            android:gravity="center"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="个人中心"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:tag="4"
+            android:id="@+id/tab_rb_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/back"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_setting"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="设置 "
+            android:textColor="@android:color/white" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_rg" />
+
+</RelativeLayout>
